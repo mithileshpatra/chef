@@ -1,0 +1,117 @@
+I, [2019-12-10T06:11:39.413482 #3683]  INFO -- default-kitchenvm1: -----> Creating <default-kitchenvm1>...
+I, [2019-12-10T06:11:39.488232 #3683]  INFO -- default-kitchenvm1: Detected platform: amazon2 version 2.0. on x86_64. Instance Type: t2.micro. Default username: ec2-user (default).
+I, [2019-12-10T06:11:39.488512 #3683]  INFO -- default-kitchenvm1: If you are not using an account that qualifies under the AWS
+free-tier, you may be charged to run these suites. The charge
+should be minimal, but neither Test Kitchen nor its maintainers
+are responsible for your incurred costs.
+
+I, [2019-12-10T06:11:40.453886 #3683]  INFO -- default-kitchenvm1: Instance <i-053e82f81a1b3992c> requested.
+I, [2019-12-10T06:11:40.454170 #3683]  INFO -- default-kitchenvm1: Polling AWS for existence, attempt 0...
+I, [2019-12-10T06:11:40.552199 #3683]  INFO -- default-kitchenvm1: Attempting to tag the instance, 0 retries
+I, [2019-12-10T06:11:40.698448 #3683]  INFO -- default-kitchenvm1: EC2 instance <i-053e82f81a1b3992c> created.
+I, [2019-12-10T06:11:40.698719 #3683]  INFO -- default-kitchenvm1: Waited 0/300s for instance <i-053e82f81a1b3992c> volumes to be ready.
+I, [2019-12-10T06:11:45.870263 #3683]  INFO -- default-kitchenvm1: Waited 5/300s for instance <i-053e82f81a1b3992c> volumes to be ready.
+I, [2019-12-10T06:11:46.272668 #3683]  INFO -- default-kitchenvm1: Waited 0/300s for instance <i-053e82f81a1b3992c> to become ready.
+I, [2019-12-10T06:11:51.361256 #3683]  INFO -- default-kitchenvm1: Waited 5/300s for instance <i-053e82f81a1b3992c> to become ready.
+I, [2019-12-10T06:11:56.437598 #3683]  INFO -- default-kitchenvm1: Waited 10/300s for instance <i-053e82f81a1b3992c> to become ready.
+I, [2019-12-10T06:12:01.517292 #3683]  INFO -- default-kitchenvm1: Waited 15/300s for instance <i-053e82f81a1b3992c> to become ready.
+I, [2019-12-10T06:12:06.599176 #3683]  INFO -- default-kitchenvm1: Waited 20/300s for instance <i-053e82f81a1b3992c> to become ready.
+I, [2019-12-10T06:12:11.676334 #3683]  INFO -- default-kitchenvm1: Waited 25/300s for instance <i-053e82f81a1b3992c> to become ready.
+I, [2019-12-10T06:12:16.816300 #3683]  INFO -- default-kitchenvm1: Waited 30/300s for instance <i-053e82f81a1b3992c> to become ready.
+I, [2019-12-10T06:12:16.860007 #3683]  INFO -- default-kitchenvm1: EC2 instance <i-053e82f81a1b3992c> ready (hostname: ec2-35-154-104-161.ap-south-1.compute.amazonaws.com).
+I, [2019-12-10T06:12:19.899753 #3683]  INFO -- default-kitchenvm1: Waiting for SSH service on ec2-35-154-104-161.ap-south-1.compute.amazonaws.com:22, retrying in 3 seconds
+I, [2019-12-10T06:12:22.902108 #3683]  INFO -- default-kitchenvm1: Waiting for SSH service on ec2-35-154-104-161.ap-south-1.compute.amazonaws.com:22, retrying in 3 seconds
+I, [2019-12-10T06:12:26.341417 #3683]  INFO -- default-kitchenvm1: [SSH] Established
+I, [2019-12-10T06:12:26.342577 #3683]  INFO -- default-kitchenvm1: Finished creating <default-kitchenvm1> (0m46.93s).
+I, [2019-12-10T06:12:26.342806 #3683]  INFO -- default-kitchenvm1: -----> Converging <default-kitchenvm1>...
+I, [2019-12-10T06:12:30.547571 #3683]  INFO -- default-kitchenvm1: Preparing files for transfer
+W, [2019-12-10T06:12:30.547793 #3683]  WARN -- default-kitchenvm1: You must set your run_list in your Policyfile instead of kitchen config. The run_list in your config will be ignored.
+W, [2019-12-10T06:12:30.547908 #3683]  WARN -- default-kitchenvm1: Ignored run_list: ["recipe[mykitchencb::tomcat9]"]
+I, [2019-12-10T06:12:30.548048 #3683]  INFO -- default-kitchenvm1: Policy lock file doesn't exist, running `chef install` for Policyfile /opt/chef-repo/cookbooks/mykitchencb/Policyfile.rb...
+I, [2019-12-10T06:12:31.699495 #3683]  INFO -- default-kitchenvm1: Building policy mykitchencb
+I, [2019-12-10T06:12:31.699874 #3683]  INFO -- default-kitchenvm1: Expanded run list: recipe[mykitchencb::tomcat9]
+I, [2019-12-10T06:12:31.700092 #3683]  INFO -- default-kitchenvm1: Caching Cookbooks...
+I, [2019-12-10T06:12:31.701402 #3683]  INFO -- default-kitchenvm1: Installing mykitchencb >= 0.0.0 from path
+I, [2019-12-10T06:12:35.129635 #3683]  INFO -- default-kitchenvm1: 
+I, [2019-12-10T06:12:35.129958 #3683]  INFO -- default-kitchenvm1: Lockfile written to /opt/chef-repo/cookbooks/mykitchencb/Policyfile.lock.json
+I, [2019-12-10T06:12:35.134962 #3683]  INFO -- default-kitchenvm1: Policy revision id: a88f9ce000b6c93a3d0bb624955cecf8e206f47d329586e7da258b9778805daf
+I, [2019-12-10T06:12:35.165082 #3683]  INFO -- default-kitchenvm1: Preparing dna.json
+I, [2019-12-10T06:12:35.165476 #3683]  INFO -- default-kitchenvm1: Exporting cookbook dependencies from Policyfile /tmp/default-kitchenvm1-sandbox-20191210-3683-knm5bd...
+I, [2019-12-10T06:12:36.252271 #3683]  INFO -- default-kitchenvm1: Exported policy 'mykitchencb' to /tmp/default-kitchenvm1-sandbox-20191210-3683-knm5bd
+I, [2019-12-10T06:12:36.252597 #3683]  INFO -- default-kitchenvm1: 
+I, [2019-12-10T06:12:36.252813 #3683]  INFO -- default-kitchenvm1: To converge this system with the exported policy, run:
+I, [2019-12-10T06:12:36.253031 #3683]  INFO -- default-kitchenvm1:   cd /tmp/default-kitchenvm1-sandbox-20191210-3683-knm5bd
+I, [2019-12-10T06:12:36.253240 #3683]  INFO -- default-kitchenvm1:   chef-client -z
+I, [2019-12-10T06:12:36.277028 #3683]  INFO -- default-kitchenvm1: Removing non-cookbook files before transfer
+I, [2019-12-10T06:12:36.277406 #3683]  INFO -- default-kitchenvm1: Preparing validation.pem
+I, [2019-12-10T06:12:36.278248 #3683]  INFO -- default-kitchenvm1: Preparing client.rb
+I, [2019-12-10T06:12:36.324542 #3683]  INFO -- default-kitchenvm1: -----> Installing Chef install only if missing package
+I, [2019-12-10T06:12:36.329775 #3683]  INFO -- default-kitchenvm1: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2019-12-10T06:12:36.329821 #3683]  INFO -- default-kitchenvm1: Trying wget...
+I, [2019-12-10T06:12:36.375406 #3683]  INFO -- default-kitchenvm1: Download complete.
+I, [2019-12-10T06:12:36.400810 #3683]  INFO -- default-kitchenvm1: el 7 x86_64
+I, [2019-12-10T06:12:36.400875 #3683]  INFO -- default-kitchenvm1: Getting information for chef stable  for el...
+I, [2019-12-10T06:12:36.400922 #3683]  INFO -- default-kitchenvm1: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=el&pv=7&m=x86_64
+I, [2019-12-10T06:12:36.400951 #3683]  INFO -- default-kitchenvm1:   to file /tmp/install.sh.3540/metadata.txt
+I, [2019-12-10T06:12:36.401365 #3683]  INFO -- default-kitchenvm1: trying wget...
+I, [2019-12-10T06:12:36.423708 #3683]  INFO -- default-kitchenvm1: sha1	43e558ec188910ca5e57b65c535334f364b560bb
+I, [2019-12-10T06:12:36.423791 #3683]  INFO -- default-kitchenvm1: sha256	301e3151062acf998044b66f4f1c69fcd473d5e34a17747474c2fcc742d3a121
+I, [2019-12-10T06:12:36.423839 #3683]  INFO -- default-kitchenvm1: url	https://packages.chef.io/files/stable/chef/15.5.17/el/7/chef-15.5.17-1.el7.x86_64.rpm
+I, [2019-12-10T06:12:36.424251 #3683]  INFO -- default-kitchenvm1: version	15.5.17
+I, [2019-12-10T06:12:36.425649 #3683]  INFO -- default-kitchenvm1: downloaded metadata file looks valid...
+I, [2019-12-10T06:12:36.434167 #3683]  INFO -- default-kitchenvm1: downloading https://packages.chef.io/files/stable/chef/15.5.17/el/7/chef-15.5.17-1.el7.x86_64.rpm
+I, [2019-12-10T06:12:36.434222 #3683]  INFO -- default-kitchenvm1:   to file /tmp/install.sh.3540/chef-15.5.17-1.el7.x86_64.rpm
+I, [2019-12-10T06:12:36.434909 #3683]  INFO -- default-kitchenvm1: trying wget...
+I, [2019-12-10T06:12:36.886592 #3683]  INFO -- default-kitchenvm1: Comparing checksum with sha256sum...
+I, [2019-12-10T06:12:36.987380 #3683]  INFO -- default-kitchenvm1: 
+I, [2019-12-10T06:12:36.987502 #3683]  INFO -- default-kitchenvm1: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2019-12-10T06:12:36.987538 #3683]  INFO -- default-kitchenvm1: 
+I, [2019-12-10T06:12:36.987567 #3683]  INFO -- default-kitchenvm1: You are installing a package without a version pin.  If you are installing
+I, [2019-12-10T06:12:36.987602 #3683]  INFO -- default-kitchenvm1: on production servers via an automated process this is DANGEROUS and you will
+I, [2019-12-10T06:12:36.987639 #3683]  INFO -- default-kitchenvm1: be upgraded without warning on new releases, even to new major releases.
+I, [2019-12-10T06:12:36.987684 #3683]  INFO -- default-kitchenvm1: Letting the version float is only appropriate in desktop, test, development or
+I, [2019-12-10T06:12:36.987715 #3683]  INFO -- default-kitchenvm1: CI/CD environments.
+I, [2019-12-10T06:12:36.987742 #3683]  INFO -- default-kitchenvm1: 
+I, [2019-12-10T06:12:36.987776 #3683]  INFO -- default-kitchenvm1: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2019-12-10T06:12:36.987804 #3683]  INFO -- default-kitchenvm1: 
+I, [2019-12-10T06:12:36.987832 #3683]  INFO -- default-kitchenvm1: Installing chef 
+I, [2019-12-10T06:12:36.987859 #3683]  INFO -- default-kitchenvm1: installing with rpm...
+I, [2019-12-10T06:12:37.025109 #3683]  INFO -- default-kitchenvm1: warning: /tmp/install.sh.3540/chef-15.5.17-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2019-12-10T06:12:37.239922 #3683]  INFO -- default-kitchenvm1: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2019-12-10T06:12:37.262385 #3683]  INFO -- default-kitchenvm1: Updating / installing...
+I, [2019-12-10T06:12:42.037872 #3683]  INFO -- default-kitchenvm1:    1:chef-15.5.17-1.el7                                                 (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 51%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2019-12-10T06:12:42.330555 #3683]  INFO -- default-kitchenvm1: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2019-12-10T06:12:42.415551 #3683]  INFO -- default-kitchenvm1: Transferring files to <default-kitchenvm1>
+I, [2019-12-10T06:12:44.184049 #3683]  INFO -- default-kitchenvm1: +---------------------------------------------+
+I, [2019-12-10T06:12:44.184181 #3683]  INFO -- default-kitchenvm1: [32m✔[0m 2 product licenses accepted.
+I, [2019-12-10T06:12:44.184218 #3683]  INFO -- default-kitchenvm1: +---------------------------------------------+
+I, [2019-12-10T06:12:44.354149 #3683]  INFO -- default-kitchenvm1: Starting Chef Infra Client, version 15.5.17
+I, [2019-12-10T06:12:45.804047 #3683]  INFO -- default-kitchenvm1: Creating a new client identity for default-kitchenvm1 using the validator key.
+I, [2019-12-10T06:12:46.096777 #3683]  INFO -- default-kitchenvm1: Using policy 'mykitchencb' at revision 'a88f9ce000b6c93a3d0bb624955cecf8e206f47d329586e7da258b9778805daf'
+I, [2019-12-10T06:12:46.104123 #3683]  INFO -- default-kitchenvm1: resolving cookbooks for run list: ["mykitchencb::tomcat9@0.1.0 (50ec2cb)"]
+I, [2019-12-10T06:12:46.110334 #3683]  INFO -- default-kitchenvm1: Synchronizing Cookbooks:
+I, [2019-12-10T06:12:46.135905 #3683]  INFO -- default-kitchenvm1:   - mykitchencb (0.1.0)
+I, [2019-12-10T06:12:46.138701 #3683]  INFO -- default-kitchenvm1: Installing Cookbook Gems:
+I, [2019-12-10T06:12:46.138755 #3683]  INFO -- default-kitchenvm1: Compiling Cookbooks...
+I, [2019-12-10T06:12:46.141350 #3683]  INFO -- default-kitchenvm1: Converging 5 resources
+I, [2019-12-10T06:12:46.141723 #3683]  INFO -- default-kitchenvm1: Recipe: mykitchencb::tomcat9
+I, [2019-12-10T06:13:14.039201 #3683]  INFO -- default-kitchenvm1:   * yum_package[java] action install
+I, [2019-12-10T06:13:14.039305 #3683]  INFO -- default-kitchenvm1:     - install version 1:11.0.5+10-1.amzn2.x86_64 of package java
+I, [2019-12-10T06:13:14.429121 #3683]  INFO -- default-kitchenvm1:   * remote_file[/opt/apache-tomcat-9.0.29.tar.gz] action create
+I, [2019-12-10T06:13:14.588499 #3683]  INFO -- default-kitchenvm1:     - create new file /opt/apache-tomcat-9.0.29.tar.gz
+I, [2019-12-10T06:13:14.594383 #3683]  INFO -- default-kitchenvm1:     - update content in file /opt/apache-tomcat-9.0.29.tar.gz from none to 1bf634
+I, [2019-12-10T06:13:14.626140 #3683]  INFO -- default-kitchenvm1:     (file sizes exceed 10000000 bytes, diff output suppressed)
+I, [2019-12-10T06:13:14.993843 #3683]  INFO -- default-kitchenvm1:   * execute[extracting tomcat] action run
+I, [2019-12-10T06:13:14.993945 #3683]  INFO -- default-kitchenvm1:     - execute tar -xzvf /opt/apache-tomcat-9.0.29.tar.gz -C /opt
+I, [2019-12-10T06:13:15.066958 #3683]  INFO -- default-kitchenvm1:   * execute[starting tomcat] action run
+I, [2019-12-10T06:13:15.067058 #3683]  INFO -- default-kitchenvm1:     - execute sh /opt/apache-tomcat-9.0.29/bin/startup.sh
+I, [2019-12-10T06:13:15.207178 #3683]  INFO -- default-kitchenvm1:   * remote_file[/opt/apache-tomcat-9.0.29/webapps/benefits.war] action create
+I, [2019-12-10T06:13:15.207787 #3683]  INFO -- default-kitchenvm1:     - create new file /opt/apache-tomcat-9.0.29/webapps/benefits.war
+I, [2019-12-10T06:13:15.208194 #3683]  INFO -- default-kitchenvm1:     - update content in file /opt/apache-tomcat-9.0.29/webapps/benefits.war from none to ea101e
+I, [2019-12-10T06:13:15.208604 #3683]  INFO -- default-kitchenvm1:     (new content is binary, diff output suppressed)
+I, [2019-12-10T06:13:15.535409 #3683]  INFO -- default-kitchenvm1: 
+I, [2019-12-10T06:13:15.539542 #3683]  INFO -- default-kitchenvm1: Running handlers:
+I, [2019-12-10T06:13:15.539809 #3683]  INFO -- default-kitchenvm1: Running handlers complete
+I, [2019-12-10T06:13:15.540143 #3683]  INFO -- default-kitchenvm1: Chef Infra Client finished, 5/5 resources updated in 31 seconds
+I, [2019-12-10T06:13:15.563344 #3683]  INFO -- default-kitchenvm1: Downloading files from <default-kitchenvm1>
+I, [2019-12-10T06:13:15.565209 #3683]  INFO -- default-kitchenvm1: Finished converging <default-kitchenvm1> (0m49.22s).

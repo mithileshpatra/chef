@@ -1,0 +1,42 @@
+{
+  "revision_id": "a88f9ce000b6c93a3d0bb624955cecf8e206f47d329586e7da258b9778805daf",
+  "name": "mykitchencb",
+  "run_list": [
+    "recipe[mykitchencb::tomcat9]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "mykitchencb": {
+      "version": "0.1.0",
+      "identifier": "50ec2cb3ec3b72ab7400658beb46961616d630fc",
+      "dotted_decimal_identifier": "22777674878172018.48259766070012742.165021616582908",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": null,
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "mykitchencb",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "mykitchencb (0.1.0)": [
+
+      ]
+    }
+  }
+}
